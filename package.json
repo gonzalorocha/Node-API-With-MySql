@@ -1,0 +1,22 @@
+{
+    "name": "node-api-with-mysql",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "copyHtml": "copyfiles --up 1 src/public/*.html ./dist",
+        "build": "tsc && npm run copyHtml"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mysql": "github:mysqljs/mysql"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.6",
+        "@types/mysql": "^2.15.14",
+        "copyfiles": "^2.3.0"
+    }
+}
